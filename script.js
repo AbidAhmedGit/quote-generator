@@ -2,6 +2,9 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
+const soundBtn = document.getElementById('sound');
+const copyBtn = document.getElementById('copy');
+
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
@@ -67,6 +70,19 @@ function tweetQuote() {
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
+
+soundBtn.addEventListener('click', ()=>{
+    // SpeechSynthesisUtterance is a web api to read screen text out loud
+    let read = new SpeechSynthesisUtterance(`${quoteText.textContent} by ${authorText.textContent}`);
+
+    // reads it out loud
+    speechSynthesis.speak(read);
+})
+
+copyBtn.addEventListener('click', ()=>{
+    navigator.clipboard.writeText(quoteText.textContent);
+});
+
 
 // on Load
 getQuotes();

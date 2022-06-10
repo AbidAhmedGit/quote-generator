@@ -5,6 +5,18 @@ html {
     box-sizing: border-box;
 }
 
+.heading {
+    margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+    text-decoration: underline rgb(12, 12, 12);
+}
+
 body{
     margin: 0;
     min-height: 100vh;
@@ -84,7 +96,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(110%)
+    filter: brightness(130%)
 }
 
 button:active {
@@ -94,6 +106,18 @@ button:active {
 
 .twitter-button {
     color: #38a1f3;
+}
+
+.fb-button {
+    color: #3b5998;
+}
+
+.instagram-button {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 .fa-twitter {

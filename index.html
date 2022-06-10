@@ -15,12 +15,18 @@
     <!-- <div>
         <p>For the uninspired....</p>
     </div> -->
-    <div class="quote-container"  id="quote-container">
 
+
+    <div class="quote-container"  id="quote-container">
+        <h1 class="heading">for the uninspired...</h1>
+        <!-- <i class="fa-solid fa-glasses fa-5x"></i> -->
+        <i class="fas fa-overline"></i>
         <!-- Quote -->
         <div class="quote-text">
             <i class="fas fa-quote-left"></i>
             <span id="quote"></span>
+            <i class="fas fa-quote-right"></i>
+
         </div>
 
         <!-- Author -->
@@ -30,9 +36,20 @@
 
         <!-- Buttons -->
         <div class="button-container">
-            <button class="twitter-button" id="twitter" title="Tweet This!">
-                <i class="fab fa-twitter"></i>
-            </button>
+            <ul>
+                <button class="twitter-button" id="twitter" title="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+
+                <button class="sound-button" id="sound" title="Read this out!">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+
+                <button class="copy-button" id="copy" title="Copy This!">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </ul>
+
             <button id="new-quote">New Quote</button>
         </div>
     </div>
